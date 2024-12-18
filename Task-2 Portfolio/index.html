@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #1e1e1e;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #ffc107;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f4f4f4;
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ffc107;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #b3b3b3;
+      max-width: 600px;
+    }
+
+    .hero img {
+      margin-top: 30px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #ffc107;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px 0;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .stats div {
+      text-align: center;
+    }
+
+    .stats div h3 {
+      font-size: 28px;
+      color: #ffc107;
+    }
+
+    .stats div p {
+      font-size: 16px;
+      color: #b3b3b3;
+    }
+
+    .projects {
+      padding: 20px 50px;
+    }
+
+    .projects h2 {
+      font-size: 28px;
+      color: #ffc107;
+      margin-bottom: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project h3 {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    .project p {
+      color: #b3b3b3;
+      margin: 0 10px 10px;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      margin-top: 50px;
+    }
+
+    footer p {
+      color: #b3b3b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">Works</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/profilePhoto.png" alt="Profile Picture">
+    <h2>Dhruham Shah</h2>
+    <p>Product Designer and Developer, based in India. Crafting intuitive and user-centered experiences.</p>
+  </section>
+
+  <section class="stats">
+    <div>
+      <h3>1+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div>
+      <h3>10</h3>
+      <p>Satisfied Clients</p>
+    </div>
+    <div>
+      <h3>4+</h3>
+      <p>Projects Completed</p>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Selected Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="images/Branding_Design.jpg" alt="Project 1">
+        <h3>Branding Design</h3>
+        <p>Creative branding solutions for startups.</p>
+      </div>
+      <div class="project">
+        <img src="images/webDevelopment.jpeg" alt="Project 2">
+        <h3>Web Development</h3>
+        <p>Responsive and modern website designs.</p>
+      </div>
+      <div class="project">
+        <img src="images/UI_UX.jpg" alt="Project 3">
+        <h3>UI/UX Prototyping</h3>
+        <p>Wireframes and interactive prototypes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Dhruham Shah. All rights reserved.</p>
+  </footer>
+</body>
+</html>
